@@ -1,5 +1,5 @@
 body{
-    background-image: url('/images/wall.jpg');
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,5 +7,57 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: ghostwhite;
+    color: black;
+}
+.cube {
+    transform-style: preserve-3d;
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: auto; 
+    animation: rotate-cube 20s infinite linear;
+}
+.side {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+.front.side {
+    background-color: hsl(214, 100%, 70%);
+    transform: translateZ(250px);
+}
+.back.side {
+    background-color: hsl(190, 100%, 70%);
+    transform: translateZ(-250px);
+}
+.right.side {
+    background-color: hsl(162, 47%, 32%);
+    transform: translateX(250px) rotateY(90deg);
+}
+.left.side {
+    background-color: hsl(300, 59%, 41%);
+    transform: translateX(-250px) rotateY(-90deg);
+}
+.top.side {
+    background-color: hsl(69, 100%, 70%);
+    transform: translateY(-250px) rotateX(90deg);
+}
+.bottom.side {
+    background-color: hsl(29, 100%, 70%);
+    transform: translateY(250px) rotateX(-90deg);
+}
+@keyframes rotate-cube {
+    0% {transform: rotateX(45deg) rotateY(45deg);}
+    25% {transform: rotateX(-45deg) rotateY(45deg);}
+    50% {transform: rotateX(-45deg) rotateY(-45deg);}
+    75% {transform: rotateX(45deg) rotateY(-45deg);}
+    100% {transform: rotateX(45deg) rotateY(45deg);}
+}
+.container {
+    perspective: 1000px;
+    width: 225px; 
+    height: 225px; 
+    margin: auto;
+    top: 100px;
+    position: relative;
 }
