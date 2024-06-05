@@ -1,13 +1,14 @@
 body{
-    background-color: white;
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     margin: 0;
-    padding: 0;
+    padding-top: 50px;
     font-family: sans-serif;
-    color: black;
+    color: rgb(89, 227, 231);
+    display: flex;
 }
 .cube {
     transform-style: preserve-3d;
@@ -49,7 +50,40 @@ body{
     perspective: 1000px;
     width: 225px; 
     height: 225px; 
-    margin: auto;
+    margin-right: 275px;
     top: 225px;
     position: relative;
+    justify-content: flex-end;
 }
+nav {
+    background-color: #292931; /* Different background color */
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  nav ul li {
+    margin-left: 2em; /* Space between items */
+  }
+  
+  nav ul li a {
+    color: hsl(190, 100%, 70%);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: hsl(190, 100%, 70%);
+    color: black;
+    text-decoration:wavy
+  }
