@@ -7,21 +7,27 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000000;
     text-align: center;
+    color: aqua;
 }
 
 header {
     width: 100%;
-    background-color: #fff;
+    height: 50px;
+    background-color: #201d1d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -70px;
+    
+    
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 header nav ul {
@@ -51,7 +57,7 @@ figure {
 figure img {
     width: auto; /* Passport size width */
     height: 500px; /* Passport size height */
-    border-radius: 10px;
+    border-radius: 10%;
 }
 
 figure figcaption h1 {
@@ -80,7 +86,7 @@ figure figcaption h1 {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #201d1d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
